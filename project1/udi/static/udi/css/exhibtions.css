@@ -1,0 +1,117 @@
+/* header */
+/* we are using the style of the home page */
+header{
+    background-image: url('/static/udi/media/exhibtions-header-background.png') !important;
+    height: 403px ;
+}
+#exhibtions{
+    text-align: center;
+    color: white;
+    margin-top: 108px;
+    font-size: 60px;
+    font-family: Lora Regular Smooth;
+}
+/* medai query */
+@media only screen and (max-width:1200px){
+    header{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    header{
+        height: 242px;
+    }
+    #exhibtions{
+        margin-top: 59px;
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width:600px){
+    header{
+        height: 150px;
+    }
+    #exhibtions{
+        margin-top: 13px;
+        font-size: 25px;
+    }
+}
+
+/* .section-the-one */
+.section-the-one{
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.the-one{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+.the-one-text h1{
+    font-size: 45px;
+    font-family: Lora Regular Smooth;
+    color: #474747;
+    margin: 0px;
+    padding: 5px;
+    text-align: left;
+    display: inline-block;
+    margin-right: 418px;
+}
+.the-one .the-one-text a{
+    font-size: 16px;
+    font-family: Lato Bold Smooth;
+    color: #474744;
+    padding-right: 10px;
+    text-align: right;
+}
+.the-one .row span{
+    font-size: 22px;
+    font-family: Lora Regular Smooth;
+    color: #474744;
+}
+.the-one .row p{
+    font-size: 16px;
+    font-family: Lora Regular Smooth;
+    color: #474744;
+}
+.the-one .row a{
+    color: red;
+}
+#view{
+    text-align: center;
+    color: white;
+    font-family: lora bold;
+    font-size: 18px;
+    border: 1px solid red;
+    background-color: red;
+    padding: 10px;
+}
+
+/* media query */
+@media only screen and (max-width:1200px){
+    .the-one .the-one-text h1{
+        margin-right: 138px;
+    }
+}
+@media only screen and (max-width:1000px){
+    .the-one .the-one-text h1{
+        margin-right: 40px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:800px){
+    .the-one .the-one-text h1{
+        display: block;
+        text-align: center;
+    }
+    .the-one .the-one-text{
+        text-align: center;
+    }
+    .row{
+        display: contents;
+    }
+}

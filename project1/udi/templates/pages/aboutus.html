@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/udi/css/home.css' %}">
+    <link rel="stylesheet" href="{% static '/udi/css/about.css' %}">
+    <title>about us</title>
+</head>
+<body>
+    <header>
+        <div class="mobile">
+            <div class="logo">
+                <span id="logo-big">UDI PELED</span>
+            </div>
+            <div class="menu">
+                <div class="icons">
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-border-width" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+
+                    <button type="button" class="close" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="linkes">
+                    <a href="{% url 'home' %}">HOME</a>
+                    <a href="{% url 'exhibtions' %}">EXHIBTIONS</a>
+                    <a href="{% url 'paintenis' %}">PAINTENIS</a>
+                    <a href="{% url 'contact' %}">CONTACT</a>
+                </div>
+            </div>
+        </div>
+        <div class="desktop">
+            <div class="desktop-linkes">
+                <a href="{% url 'home' %}">HOME</a>
+                <a href="{% url 'exhibtions' %}">EXHIBTIONS</a>
+                <div class="logo">
+                    <span id="logo-big">UDI PELED</span>
+                    <br>
+                    <span id="logo-small">ARTIEST/PAINTENS</span>
+                </div>
+                <a href="{% url 'paintenis' %}">PAINTENIS</a>
+                <a href="{% url 'contact' %}">CONTACT</a>
+            </div>
+        </div>
+        <h1 id="about">ABOUT US</h1>
+    </header>
+    <section class="section-the-one">
+        <div class="the-one">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col-8">
+                        <div class="the-one-img">
+                            <img class="img-fluid" id="none" src="/static/udi/media/about-img-section-one.png" alt="">
+                            <img class="img-fluid" src="/static/udi/media/section-three-img.png" alt="section-three-img">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="the-one-text">
+                            <h1>
+                                HI! I UDI PELED
+                            </h1>
+                            <p>
+                                i love painting and can always be
+                                found working on something new
+                                whether putting together a painting of
+                                farmed jazz
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-the-two">
+        <div class="the-two">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="the-two-text">
+                            <h1> ABOUT</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore
+                                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consquest
+                            </p>
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit
+                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum. Sed ut perspiciatis
+                                unde omnis iste natus error sit voluptatem
+                            </p>
+                            <a href="{% url 'home' %}">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="the-two-img-bouth">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-two.png" alt="bouth">
+                        </div>
+                        <div class="the-two-img-first-second">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-two-one.png" alt="first-img">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-two-two.png" alt="second-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-the-three">
+        <div class="the-three">
+            <div class="the-three-text">
+                <h1>FAVORIT POST</h1>
+                <p>
+                    udi love painting and can always be found working on something
+                    new whether putting together a painting of farmed jazz
+                </p>
+            </div>
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <img class="img-fluid" src="/static/udi/media/about-img-section-three-one.png" alt="about-img-one">
+                        <h1>LOREM IPSUM DOLOR</h1>
+                        <span>januarry 20,2015</span>
+                        <p>
+                            lorem ipsum dolor site amet , consectetur elit
+                            sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="/static/udi/media/about-img-section-three-two.png" alt="about-img-one">
+                        <h1>LOREM IPSUM DOLOR</h1>
+                        <span>januarry 20,2015</span>
+                        <p>
+                            lorem ipsum dolor site amet , consectetur elit
+                            sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="/static/udi/media/about-img-section-three-three.png" alt="about-img-one">
+                        <h1>LOREM IPSUM DOLOR</h1>
+                        <span>januarry 20,2015</span>
+                        <p>
+                            lorem ipsum dolor site amet , consectetur elit
+                            sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="the-three-link">
+                <a href="{% url 'gallary' %}">VIEW ALL</a>
+            </div>
+        </div>
+    </section>
+    <section class="section-the-four">
+        <div class="the-four">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="the-four-text">
+                            <h1>DON`T MISS NEW THINGS</h1>
+                            <p>
+                                Udi loves painting and can always be found working on something new. Whether putting
+                                together a painting of famed jazz
+                            </p>
+                            <a href="{% url 'contact' %}">READ MORE</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="the-four-img">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-four-one.png" alt="about-img-section-four-one">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-four-two.png" alt="about-img-section-four-two">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-four-three.png" alt="about-img-section-four-three">
+                            <img class="img-fluid" src="/static/udi/media/about-img-section-four-four.png" alt="about-img-section-four-four">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-five">
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col">
+                    <h2>OUR NESLEETR</h2>
+                    <span>lorem ipsum dolor sit amet consecteur adipsicing elit</span>
+                </div>
+                <div class="col">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+
+                        <input type="search" name="newsleter" id="newsleter" placeholder="LOREM IPUSM DOLOR SIT AMET">
+                        <input type="submit" value="SUBSCRIB" id="subscrib">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-six">
+        <div class="six">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <h1>ABOUT UDI </h1>
+                        <p>
+                            udi peled is a artist live in
+                            califorina he began painting at early age
+                            at kibuu`z and is an
+                            expressionist br nature
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>PORTRAS</h1>
+                        <p>
+                            the only one udi love more
+                            than talking to people is
+                            painting them , he has a wide
+                            varity of painting of his friends
+                            and loved ones as well as famed
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>LANDSCAPES</h1>
+                        <p>
+                            Udi loves painting nature and many of his works
+                            portray animals in different settings
+                            ranging from desert landscapes to lush and tropical areas
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>ANIMALS</h1>
+                        <p>
+                            Udi has many paintings devoted to animals ranging from
+                            donkeys and dogs to camels, cows and
+                            roosters. If you have an inquiry for a project painting an
+                            animal get in touch with Udi
+                            today
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>NEWSLETER</h1>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <input type="search" name="" id="section-six-search">
+                            <input type="submit" value="SUBSCRIB" id="six-subscrib">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-6" style="text-align: left;">
+                    <a href="{% url 'home' %}">HOME</a>
+                    <a href="{% url 'exhibtions' %}">EXHIBTIONS</a>
+                    <a href="{% url 'paintenis' %}">PAINTENIS</a>
+                    <a href="{% url 'contact' %}">CONTACT</a>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <span>ALL RIGHTS RESEVED 2016/UDI PELED</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{% static '/udi/javascripts/home.js' %}"></script>
+    <script src="{% static '/udi/javascripts/about.js' %}"></script>
+</body>
+</html>

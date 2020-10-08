@@ -1,0 +1,223 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/udi/css/contact.css' %}">
+    <title>contact</title>
+</head>
+<body>
+  <header>
+      <div class="mobile">
+               <div class="logo">
+                   <span id="logo-big">UDI PELED</span>
+               </div>
+               <div class="menu">
+                   <div class="icons">
+                       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-border-width" fill="currentColor"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                               d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z" />
+                       </svg>
+
+                       <button type="button" class="close" aria-label="Close">
+                           <span aria-hidden="true">&times;</span>
+                       </button>
+
+                   </div>
+                   <div class="linkes">
+                       <a href="{% url 'home' %}">HOME</a>
+                       <a href="{% url 'exhibtions' %}">EXHIBTIONS</a>
+                       <a href="{% url 'paintenis' %}">PAINTENIS</a>
+                       <a href="{% url 'contact' %}">CONTACT</a>
+                   </div>
+               </div>
+               </div>
+      </div>
+      <div class="desktop">
+          <div class="desktop-linkes">
+              <a href="{% url 'home' %}">HOME</a>
+              <a href="{% url 'exhibtions' %}">EXHIBTIONS</a>
+              <div class="logo">
+                  <span id="logo-big">UDI PELED</span>
+                  <br>
+                  <span id="logo-small">ARTIEST/PAINTENS</span>
+              </div>
+              <a href="{% url 'paintenis' %}">PAINTENIS</a>
+              <a href="{% url 'contact' %}">CONTACT</a>
+          </div>
+      </div>
+      <h1 id="contact-us">
+          contact us
+      </h1>
+  </header>
+  <section class="section-one">
+      <div class="one">
+          <div class="one-text">
+              <h1>
+                  Hello.... <br>
+                  thank you for getting in touch with 
+                  UDI Peled art and painting
+              </h1>
+              <p>
+                  udi peled love painting and can
+                  always be found working on something
+                  new , whether putting together a painting
+              </p>
+              <a href="{% url 'about' %}">READ MORE</a>
+          </div>
+          <div class="one-img">
+              <img class="img-fluid" src="/static/udi/media/section-two-img-three.png" alt="photo">
+          </div>
+      </div>
+  </section>
+  <section class="section-two">
+      <div class="two">
+          <div class="two-head">
+              <span>S E N D U S A M A S S A G E</span>
+              <hr>
+          </div>
+          <div class="container-fluid">
+              <div class="row justify-content-md-center">
+                  <div class="col">
+                      <span>EMAIL: support@udipeled.com</span>
+                      <span>PHONE:(514)4567 6543</span>
+                      <a href="">
+                          <img src="/static/udi/media/facebook.png" alt="facebook">
+                          <img src="/static/udi/media/twitter.png" alt="twitter">
+                          <img src="/static/udi/media/instagram.png" alt="instagram">
+                      </a>
+                  </div>
+                  <div class="col-9">
+                      <form action="{% url 'contact' %}" method="POST">
+                          {% csrf_token %}
+                          {{ form }}
+                          <!-- <label for="first_name">First  NAME</label>
+                          <input type="text" name="first_name" id="first_name" required maxlength="60">
+                          <label for="second_name">Sacond  Name</label>
+                          <input type="text" name="second_name" id="second_name" required maxlength="60">
+                          <label for="email">Email</label>
+                          <input type="email" name="email" id="email" required maxlength="60">
+                          <label for="massage">Massage</label>
+                          <input type="text" name="massage" id="massage" required maxlength="250"> -->
+                          <input type="submit" value="submit" id="submit">
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="section-three">
+      <div class="three">
+          <h1>FOLLOW ON INSTAGRAM</h1>
+          <span>lorme ipsumm dolor sit amet</span>
+          <div class="container-fluid">
+              <div class="row justify-content-md-center">
+                  <div class="col">
+                  <img class="img-fluid" src="/static/udi/media/contact-section-three-img-one.png" alt="section-three-img">
+                  </div>
+                  <div class="col">
+                      <img class="img-fluid" src="/static/udi/media/contact-section-three-img-two.png" alt="section-three-img">
+                  </div>
+                  <div class="col">
+                      <img class="img-fluid" src="/static/udi/media/contact-section-three-img-three.png" alt="section-three-img">
+                  </div>
+                  <div class="col">
+                      <img class="img-fluid" src="/static/udi/media/contact-section-three-img-four.png" alt="section-three-img">
+                  </div>
+                  <div class="col">
+                      <img class="img-fluid" src="/static/udi/media/contact-section-three-img-five.png" alt="section-three-img">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <section class="section-four">
+      <div class="four">
+          <div class="container-fluid">
+              <div class="row justify-content-md-center">
+                  <div class="col">
+                      <h1>OUR NEWSLETER</h1>
+                      <span>lorem ipsum dolor sit amit</span>
+                  </div>
+                  <div class="col">
+                      <form action="" method="POST">
+                          {% csrf_token %}
+                          <input type="search" name="search" id="search" placeholder="lorem">
+                          <input type="submit" value="submit" id="submit2">
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <section class="section-six">
+        <div class="six">
+            <div class="container-fluid">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <h1>ABOUT UDI </h1>
+                        <p>
+                            udi peled is a artist live in
+                            califorina he began painting at early age
+                            at kibuu`z and is an
+                            expressionist br nature
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>PORTRAS</h1>
+                        <p>
+                            the only one udi love more
+                            than talking to people is
+                            painting them , he has a wide
+                            varity of painting of his friends
+                            and loved ones as well as famed
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>LANDSCAPES</h1>
+                        <p>
+                            Udi loves painting nature and many of his works
+                            portray animals in different settings
+                            ranging from desert landscapes to lush and tropical areas
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>ANIMALS</h1>
+                        <p>
+                            Udi has many paintings devoted to animals ranging from
+                            donkeys and dogs to camels, cows and
+                            roosters. If you have an inquiry for a project painting an
+                            animal get in touch with Udi
+                            today
+                        </p>
+                    </div>
+                    <div class="col">
+                        <h1>NEWSLETER</h1>
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                            <input type="search" name="" id="section-six-search">
+                            <input type="submit" value="SUBSCRIB" id="six-subscrib">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-md-center">
+                <div class="col-6" style="text-align: left;">
+                    <a href="{% url 'home' %}">HOME</a>
+                    <a href="{% url 'exhibtions' %}">EXHIBTIONS</a>
+                    <a href="{% url 'paintenis' %}">PAINTENIS</a>
+                    <a href="{% url 'contact' %}">CONTACT</a>
+                </div>
+                <div class="col" style="text-align: right;">
+                    <span>ALL RIGHTS RESEVED 2016/UDI PELED</span>
+                </div>
+            </div>
+        </div>
+    <script src="{% static '/udi/javascripts/contact.js' %}"></script>
+</body>
+</html>
